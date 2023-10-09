@@ -1,6 +1,6 @@
 # 🎣 hello-fishing-app
 
-## 🛠️ 개발 환경
+## 🛠️ Development Environment
 
 ### Hardware
 
@@ -25,3 +25,8 @@
 - cocoapods v1.13.0 (ios)
 - react v18.2.0
 - react-native v0.72.5
+
+## 🚀 Getting Start
+
+1. `yarn install`
+2. `yarn start`
