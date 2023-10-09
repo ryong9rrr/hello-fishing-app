@@ -3,12 +3,12 @@
   "version": "0.0.1",
   "private": true,
   "scripts": {
+    "lint": "eslint .",
+    "test": "jest",
+    "start": "react-native start",
     "android": "react-native run-android",
     "build:ios": "react-native bundle --entry-file='index.js' --bundle-output='./ios/main.jsbundle' --dev=false --platform='ios'",
-    "ios": "react-native run-ios",
-    "lint": "eslint .",
-    "start": "react-native start",
-    "test": "jest"
+    "ios": "react-native run-ios"
   },
   "dependencies": {
     "@react-native-community/cli-doctor": "^11.3.8",

@@ -8,13 +8,15 @@
 
 ### Tools
 
-- Xcode v14.3.1 / Android Studio
+- Xcode v14.3.1
+- [Android Studio](/docs/android-settings.md)
 
 ### Global
 
 - homebrew v4.1.14
 - rbenv(ruby) v2.7.5
 - watchman v2023.10.02.00
+- OpenJDK v11
 - node v18.16.1
 - npm v9.5.1
 
