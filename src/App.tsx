@@ -1,5 +1,14 @@
 import React from "react";
-import { SafeAreaView, ScrollView, StatusBar, Text, useColorScheme, View } from "react-native";
+import {
+  SafeAreaView,
+  ScrollView,
+  StatusBar,
+  useColorScheme,
+  View,
+  Dimensions,
+  StyleSheet,
+} from "react-native";
+import WebView from "react-native-webview";
 
 import { Colors } from "react-native/Libraries/NewAppScreen";
 
@@ -22,9 +31,9 @@ function App() {
             backgroundColor: isDarkMode ? Colors.black : Colors.white,
           }}
         >
-          {Array.from({ length: 100 }, (v, i) => i).map(i => (
-            <Text key={i}>Hello World!</Text>
-          ))}
+          <View style={styles.webviewContainer}>
+            <WebView style={styles.webview} source={{ uri: WEBVIEW_URL }} nestedScrollEnabled />
+          </View>
         </View>
       </ScrollView>
     </SafeAreaView>
@@ -32,3 +41,20 @@ function App() {
 }
 
 export default App;
+
+const WEBVIEW_URL = "https://www.naver.com/";
+const deviceHeight = Dimensions.get("window").height;
+const deviceWidth = Dimensions.get("window").width;
+
+const styles = StyleSheet.create({
+  webviewContainer: {
+    flex: 1,
+    alignItems: "center",
+    justifyContent: "space-between",
+  },
+  webview: {
+    flex: 1,
+    width: deviceWidth,
+    height: deviceHeight,
+  },
+});
