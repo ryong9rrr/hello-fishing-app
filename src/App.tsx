@@ -42,7 +42,7 @@ function App() {
 
 export default App;
 
-const WEBVIEW_URL = "https://www.naver.com/";
+const WEBVIEW_URL = "http://localhost:3000/";
 const deviceHeight = Dimensions.get("window").height;
 const deviceWidth = Dimensions.get("window").width;
 
